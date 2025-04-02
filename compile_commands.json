@@ -1,0 +1,21 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-DBX_CONFIG_DEBUG=1",
+      "-Iinclude",
+      "-Ibx_include",
+      "-Ibimg_include",
+      "-o",
+      "main",
+      "main.cpp"
+    ],
+    "directory": "/home/balma/dev/engine",
+    "file": "/home/balma/dev/engine/main.cpp",
+    "output": "/home/balma/dev/engine/main"
+  }
+]
