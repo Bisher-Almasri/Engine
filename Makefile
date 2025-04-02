@@ -41,8 +41,7 @@ ifeq ($(PLATFORM),LINUX)
 endif
 
 ifeq ($(PLATFORM),MACOS)
-    BGFX_HEADERS += $(shell sdl2-config --cflags)
-    LINKER_FLAGS = -L$(BGFX_LIB_DIR) -Wl,-rpath,. -lbgfx-shared-libRelease -lSDL2 -framework Cocoa -framework Metal -framework QuartzCore
+				LINKER_FLAGS = -L$(BGFX_LIB_DIR) -Wl,-rpath,. -lbgfx-shared-libRelease $(shell sdl2-config --libs) -framework Cocoa -framework Metal -framework QuartzCore
 endif
 
 # Target for compiling the executable
