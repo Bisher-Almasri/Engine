@@ -25,8 +25,6 @@ pub fn run() {
 
     #[cfg(target_arch = "wasm32")]
     {
-        // Winit prevents sizing with CSS, so we have to set
-        // the size manually when on web.
         use winit::dpi::PhysicalSize;
         let _ = window.request_inner_size(PhysicalSize::new(450, 400));
 
